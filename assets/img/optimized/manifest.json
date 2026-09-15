@@ -1,0 +1,834 @@
+[
+  {
+    "original": "beauty-edit/comparação-01-antes.jpeg",
+    "slug": "beauty-edit-comparacao-01-antes",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 8962101,
+    "masterBytes": 15479986,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 179452
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 587502
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1504094
+      }
+    ]
+  },
+  {
+    "original": "beauty-edit/comparação-01-depois.jpeg",
+    "slug": "beauty-edit-comparacao-01-depois",
+    "width": 3865,
+    "height": 5798,
+    "originalBytes": 23417538,
+    "masterBytes": 24877952,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 172752
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 580480
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1456586
+      }
+    ]
+  },
+  {
+    "original": "beauty-edit/comparação-02-antes.jpeg",
+    "slug": "beauty-edit-comparacao-02-antes",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 6858659,
+    "masterBytes": 11545284,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 97506
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 308382
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 831326
+      }
+    ]
+  },
+  {
+    "original": "beauty-edit/comparação-02-depois.jpeg",
+    "slug": "beauty-edit-comparacao-02-depois",
+    "width": 3914,
+    "height": 5872,
+    "originalBytes": 18233848,
+    "masterBytes": 20399190,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 58530
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 174584
+      },
+      {
+        "width": 2000,
+        "height": 3001,
+        "bytes": 422258
+      }
+    ]
+  },
+  {
+    "original": "beauty-edit/hero-thaina-beauty-edit.jpeg",
+    "slug": "beauty-edit-hero-thaina-beauty-edit",
+    "width": 2507,
+    "height": 3761,
+    "originalBytes": 4353212,
+    "masterBytes": 5690318,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 111636
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 548622
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1637952
+      }
+    ]
+  },
+  {
+    "original": "beauty-edit/thaina-perfil-beauty-edit.jpeg",
+    "slug": "beauty-edit-thaina-perfil-beauty-edit",
+    "width": 3303,
+    "height": 4955,
+    "originalBytes": 16242388,
+    "masterBytes": 17845936,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 79310
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 318566
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 881464
+      }
+    ]
+  },
+  {
+    "original": "boss-4p/hero-thaina-boss-4p.jpeg",
+    "slug": "boss-4p-hero-thaina-boss-4p",
+    "width": 3472,
+    "height": 5208,
+    "originalBytes": 16655126,
+    "masterBytes": 18619632,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 54326
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 180020
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 477586
+      }
+    ]
+  },
+  {
+    "original": "boss-4p/thaina-perfil.jpeg",
+    "slug": "boss-4p-thaina-perfil",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 7949917,
+    "masterBytes": 12407562,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 82574
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 458438
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1628568
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-01.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-01",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 22095541,
+    "masterBytes": 25240168,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 176812
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 554182
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1391546
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-02.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-02",
+    "width": 3223,
+    "height": 4834,
+    "originalBytes": 4289146,
+    "masterBytes": 6215370,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 37036
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 177298
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 636504
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-03.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-03",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 22239913,
+    "masterBytes": 24576640,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 145570
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 488924
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1330326
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-04.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-04",
+    "width": 3182,
+    "height": 4772,
+    "originalBytes": 7362876,
+    "masterBytes": 9452834,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 162032
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 640856
+      },
+      {
+        "width": 2000,
+        "height": 2999,
+        "bytes": 1847244
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-05.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-05",
+    "width": 3730,
+    "height": 5595,
+    "originalBytes": 23425465,
+    "masterBytes": 24511000,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 186994
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 697332
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1880100
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-06.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-06",
+    "width": 3573,
+    "height": 5359,
+    "originalBytes": 5251656,
+    "masterBytes": 7653212,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 36950
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 197420
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 713698
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-07.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-07",
+    "width": 3204,
+    "height": 4806,
+    "originalBytes": 5258522,
+    "masterBytes": 7359274,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 82140
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 343636
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1044466
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-08.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-08",
+    "width": 3916,
+    "height": 5874,
+    "originalBytes": 5317885,
+    "masterBytes": 13210114,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 65272
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 235258
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 725520
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-09.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-09",
+    "width": 2959,
+    "height": 4439,
+    "originalBytes": 3983648,
+    "masterBytes": 5655796,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 67816
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 274740
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 838472
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-10.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-10",
+    "width": 3609,
+    "height": 5414,
+    "originalBytes": 16771797,
+    "masterBytes": 19457762,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 64668
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 212634
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 554884
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-11.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-11",
+    "width": 3538,
+    "height": 5307,
+    "originalBytes": 5676123,
+    "masterBytes": 8226490,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 45856
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 231894
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 724918
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-12.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-12",
+    "width": 3762,
+    "height": 5642,
+    "originalBytes": 19354311,
+    "masterBytes": 21448024,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 74424
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 279800
+      },
+      {
+        "width": 2000,
+        "height": 2999,
+        "bytes": 715010
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-13.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-13",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 21264139,
+    "masterBytes": 23374080,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 65924
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 227542
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 620502
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-14.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-14",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 18968019,
+    "masterBytes": 20170748,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 62914
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 212912
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 600372
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-15.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-15",
+    "width": 3742,
+    "height": 5614,
+    "originalBytes": 17340537,
+    "masterBytes": 19234684,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 56796
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 178374
+      },
+      {
+        "width": 2000,
+        "height": 3001,
+        "bytes": 435790
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-16.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-16",
+    "width": 3676,
+    "height": 5513,
+    "originalBytes": 6558005,
+    "masterBytes": 9388392,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 43732
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 237528
+      },
+      {
+        "width": 2000,
+        "height": 2999,
+        "bytes": 959354
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-17.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-17",
+    "width": 3739,
+    "height": 5608,
+    "originalBytes": 10108668,
+    "masterBytes": 11147962,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 60494
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 190084
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 461722
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-18.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-18",
+    "width": 3866,
+    "height": 5799,
+    "originalBytes": 18220103,
+    "masterBytes": 19269390,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 40906
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 130492
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 365782
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-19.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-19",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 20168370,
+    "masterBytes": 22281184,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 56232
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 178858
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 513668
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-20.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-20",
+    "width": 4024,
+    "height": 6048,
+    "originalBytes": 6599742,
+    "masterBytes": 9623002,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 962,
+        "bytes": 68584
+      },
+      {
+        "width": 1200,
+        "height": 1804,
+        "bytes": 248840
+      },
+      {
+        "width": 2000,
+        "height": 3006,
+        "bytes": 758172
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-21.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-21",
+    "width": 3517,
+    "height": 5275,
+    "originalBytes": 7167572,
+    "masterBytes": 9939532,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 62772
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 419026
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1414742
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/grid-luz-em-foco-22.jpeg",
+    "slug": "luz-em-foco-grid-luz-em-foco-22",
+    "width": 2309,
+    "height": 3463,
+    "originalBytes": 3719139,
+    "masterBytes": 4920658,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 94384
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 502612
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1627948
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/hero-thaina-luz-em-foco.jpeg",
+    "slug": "luz-em-foco-hero-thaina-luz-em-foco",
+    "width": 3733,
+    "height": 5599,
+    "originalBytes": 8114356,
+    "masterBytes": 11171408,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 74880
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 425458
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1426118
+      }
+    ]
+  },
+  {
+    "original": "luz-em-foco/thaina-perfil-luz-em-foco.jpeg",
+    "slug": "luz-em-foco-thaina-perfil-luz-em-foco",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 4402224,
+    "masterBytes": 11386562,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 33390
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 98830
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 305332
+      }
+    ]
+  }
+]
