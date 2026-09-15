@@ -21,7 +21,7 @@ Abra http://127.0.0.1:4173. A pasta `dist/` contém o site pronto para hospedage
 - `assets/css/style.css`: identidade visual e estilos responsivos.
 - `assets/js/config.js`: número de WhatsApp, incluindo país e DDD, somente dígitos.
 
-O formulário valida os campos e prepara uma conversa no WhatsApp. Não armazena dados e não envia e-mail. O visitante conclui o envio no WhatsApp. Sem um número configurado, nenhuma mensagem é enviada e a interface informa a indisponibilidade. O número ainda precisa ser informado pelo responsável.
+O formulário valida os campos e prepara uma conversa no WhatsApp. Não armazena dados e não envia e-mail. O visitante conclui o envio no WhatsApp. O destinatário é `553194517665`, publicado no botão de orçamentos do [site oficial](https://thainasampaio.com.br/) em 15/09/2026. Caso o número seja removido da configuração, nenhuma mensagem é enviada e a interface informa a indisponibilidade.
 
 Após editar, execute `npm run build`. Verifique com `npm run check`.
 
