@@ -31,7 +31,7 @@ for (const [route,{html}] of docs) {
 for (const folder of ['scripts','src','assets/js']) {
   for (const file of await fs.readdir(folder)) if (/\.m?js$/.test(file)) execFileSync(process.execPath,['--check',path.join(folder,file)]);
 }
-for (const font of ['cormorant-regular','cormorant-italic','manrope-regular','manrope-semibold']) {
+for (const font of ['cormorant-regular','cormorant-italic','manrope-regular','manrope-semibold','inter-tight-regular','inter-tight-medium','inter-tight-semibold','space-grotesk-medium']) {
   const bytes = await fs.readFile(`dist/assets/fonts/${font}.ttf`);
   if (bytes.readUInt32BE(0) !== 0x00010000) throw new Error(`Invalid font: ${font}`);
 }
