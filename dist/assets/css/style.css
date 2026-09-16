@@ -68,6 +68,18 @@ em{font-style:normal;font-weight:500;color:#8f9292}
 .home-hero h1 em{color:#8c8e8e}
 .hero-description{max-width:410px;margin:35px 0 32px;color:#babcbc;font-size:16px;line-height:1.65}
 .hero-bottom{bottom:27px;font-size:10px;color:#878989}
+.workshop-boss{display:grid;grid-template-columns:minmax(145px,210px) minmax(0,1fr) auto;align-items:center;gap:clamp(28px,5vw,80px);padding:clamp(48px,6vw,92px) var(--pad);background:radial-gradient(circle at 88% 12%,rgba(196,163,106,.15),transparent 34%),#17140f;color:#f5f0e7;border-top:1px solid rgba(196,163,106,.35);border-bottom:1px solid rgba(196,163,106,.35)}
+.workshop-boss-date{display:flex;align-items:center;gap:14px;color:#c4a36a;border-right:1px solid rgba(196,163,106,.35);padding-right:28px}
+.workshop-boss-date>span{font-family:var(--display);font-size:clamp(70px,8vw,120px);font-weight:500;letter-spacing:-.08em;line-height:.85}
+.workshop-boss-date>div{font-size:12px;font-weight:600;letter-spacing:.13em;line-height:1.7}
+.workshop-boss-copy .eyebrow{margin-bottom:17px;color:#c4a36a;border-color:rgba(196,163,106,.6)}
+.workshop-boss h2{font-size:clamp(48px,5vw,76px);white-space:nowrap}
+.workshop-boss h2 em{color:#c4a36a}
+.workshop-boss-copy>p:last-child{max-width:530px;margin-top:18px;color:#d6d0c5;font-size:16px;line-height:1.6}
+.workshop-boss-cta{background:#c4a36a;border-color:#c4a36a;color:#080808;white-space:nowrap}
+.workshop-boss-cta:hover{background:#d4b780}
+@media(max-width:1100px){.workshop-boss{grid-template-columns:180px minmax(0,1fr)}.workshop-boss-cta{grid-column:2;justify-self:start}}
+@media(max-width:760px){.workshop-boss{grid-template-columns:1fr;gap:28px;padding-top:52px;padding-bottom:58px}.workshop-boss-date{width:max-content;max-width:100%;border-right:0;border-bottom:1px solid rgba(196,163,106,.35);padding:0 0 24px}.workshop-boss h2{white-space:normal}.workshop-boss-cta{grid-column:1}.workshop-boss-copy>p:last-child{margin-top:16px}}
 .statement-strip{background:var(--paper);color:var(--ink);border:0;padding-top:22px;padding-bottom:22px;font-size:11px;font-weight:600}
 .statement-strip i{color:#999;font-size:15px}
 

@@ -5,6 +5,11 @@ export const home = () => layout('Thainá Sampaio | Fotografia, beleza e presen�
   <div class="hero-copy"><p class="eyebrow"><span class="small-line"></span> POR THAINÁ SAMPAIO</p><h1 id="hero-title">Sua essência.<br>Uma imagem<br><em>inesquecível.</em></h1><p class="hero-description">Maquiagem e fotografia se encontram para revelar a sua melhor versão. Com intenção, personalidade e presença.</p><div class="hero-actions"><a class="button" href="#pacote-boss">Conheça o Pacote Boss ${arrow}</a><a class="text-link" href="#cursos">Explore os cursos <span aria-hidden="true">↗</span></a></div></div>
   <div class="hero-bottom"><span>MAIS QUE UMA FOTO. UMA NOVA FORMA DE SE VER.</span><a href="#pacote-boss" aria-label="Conhecer a experiência">EXPLORE <span>↓</span></a></div>
 </section>
+<section class="workshop-boss" id="workshop-boss" aria-labelledby="workshop-boss-title">
+  <div class="workshop-boss-date" aria-label="25 de fevereiro, em Portugal"><span>25</span><div>FEVEREIRO<br>PORTUGAL</div></div>
+  <div class="workshop-boss-copy"><p class="eyebrow">ENCONTRO PRESENCIAL · PORTUGAL</p><h2 id="workshop-boss-title">Workshop <em>Boss.</em></h2><p>Uma edição especial do Workshop Boss acontece em Portugal no dia 25/02. Quero você lá.</p></div>
+  <a class="button workshop-boss-cta" href="#contato" data-whatsapp="Olá, Thainá! Quero garantir minha vaga no Workshop Boss em Portugal no dia 25/02. Pode me passar as informações?">Garanta sua vaga ${arrow}</a>
+</section>
 <div class="statement-strip" aria-hidden="true"><span>BELEZA COM INTENÇÃO</span><i>✳</i><span>IMAGENS QUE POSICIONAM</span><i>✳</i><span>PRESENÇA QUE MARCA</span><i>✳</i></div>
 <section class="section light boss-section" id="pacote-boss">
   <div class="boss-visual"><div class="image-frame">${photo('luz-em-foco-grid-luz-em-foco-08', 'Retrato de mulher com blazer marrom, em uma composição de estúdio sofisticada')}</div><span class="image-caption">BELEZA, DIREÇÃO & FOTOGRAFIA</span><span class="vertical-caption">A EXPERIÊNCIA BOSS</span></div>
