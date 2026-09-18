@@ -15,7 +15,7 @@ Abra http://127.0.0.1:4173. A pasta `dist/` contém o site pronto para hospedage
 
 ## Conteúdo e manutenção
 
-- `src/home.mjs`: seções da home e depoimentos ilustrativos, identificados como prévia.
+- `src/home.mjs`: seções da home e trechos dos depoimentos reais em `assets/img/feedbacks/`.
 - `src/courses.mjs`: textos, conteúdos, preços e checkout dos três cursos.
 - `src/shared.mjs`: cabeçalho, rodapé, história e estrutura HTML.
 - `assets/css/style.css`: identidade visual e estilos responsivos.
