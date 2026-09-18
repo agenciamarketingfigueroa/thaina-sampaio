@@ -93,6 +93,6 @@ function coursePage(slug, c) {
     <section class="section about-section mentor-section light"><div class="about-image">${photo('beauty-edit-thaina-perfil-beauty-edit','Thainá Sampaio, sua professora')}<span class="about-image-label">Da minha prática para a sua.</span></div><div class="about-copy"><p class="eyebrow">COM QUEM VOCÊ VAI APRENDER</p><h2>Eu sou<br><em>Thainá Sampaio.</em></h2>${biography}<span class="signature">Thainá Sampaio</span></div></section>
     <section class="section light faq-section"><div><p class="eyebrow">ANTES DE COMEÇAR</p><h2>Suas dúvidas,<br><em>respondidas.</em></h2></div><div class="modules">${c.faq.map(([q,a])=>`<details><summary>${q}</summary><div class="module-body"><p>${a}</p></div></details>`).join('')}</div></section>
     <div class="course-return"><a class="text-link" href="/#cursos">Conheça os outros cursos ${arrow}</a></div>
-  `, `course-page ${slug}`);
+  `, `course-page ${slug}`, { noindex: slug === 'boss-4p' });
 }
 export const courses = () => Object.fromEntries(Object.entries(data).map(([slug,course])=>[slug,coursePage(slug,course)]));
