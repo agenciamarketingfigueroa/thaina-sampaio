@@ -27,7 +27,7 @@ Após editar, execute `npm run build`. Verifique com `npm run check`.
 
 ## Fotografias
 
-As 32 fotos estão em `assets/img/optimized/`:
+As 33 fotos estão em `assets/img/optimized/`:
 
 - `*-master.webp`: resolução integral e compressão sem perdas, com perfil de cor preservado. Os pixels foram comparados por hash após orientação e conversão para sRGB, antes de remover os JPEGs originais.
 - `*-640.webp`, `*-1200.webp`, `*-2000.webp`: versões para exibição, com qualidade WebP 94. São selecionadas pelo navegador com `srcset`; têm redução de dimensões e compressão com perdas, ao contrário dos masters.

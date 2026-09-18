@@ -36,7 +36,7 @@ for (const font of ['cormorant-regular','cormorant-italic','manrope-regular','ma
   if (bytes.readUInt32BE(0) !== 0x00010000) throw new Error(`Invalid font: ${font}`);
 }
 const manifest = JSON.parse(await fs.readFile('assets/img/optimized/manifest.json','utf8'));
-if (manifest.length !== 32 || manifest.some(i=>!i.losslessVerified)) throw new Error('Image preservation check incomplete');
-console.log(`OK: ${routes.length} pages, ${checked} local links/assets, JavaScript syntax, fonts, and 32 lossless masters verified.`);
+if (manifest.length !== 33 || manifest.some(i=>!i.losslessVerified)) throw new Error('Image preservation check incomplete');
+console.log(`OK: ${routes.length} pages, ${checked} local links/assets, JavaScript syntax, fonts, and 33 lossless masters verified.`);
 const config = await fs.readFile('assets/js/config.js','utf8');
 if (/whatsapp:\s*''/.test(config)) console.log('PENDING: recipient WhatsApp number. Form correctly reports that no message was sent.');
