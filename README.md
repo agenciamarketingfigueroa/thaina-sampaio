@@ -25,7 +25,7 @@ Abra http://127.0.0.1:4173. A pasta `dist/` contém o site pronto para hospedage
 
 O formulário valida os campos e prepara uma conversa no WhatsApp. Não armazena dados e não envia e-mail. O visitante conclui o envio no WhatsApp. O destinatário é `553194517665`, publicado no botão de orçamentos do [site oficial](https://thainasampaio.com.br/) em 15/09/2026. Caso o número seja removido da configuração, nenhuma mensagem é enviada e a interface informa a indisponibilidade.
 
-Pacote Boss, Mentoria Boss, Workshop Boss e Guia de Poses têm mensagens próprias para o WhatsApp. O Workshop direciona para a lista de espera. Beauty Edit e Luz em Foco direcionam para suas páginas de curso.
+Pacote Boss, Mentoria Boss, Workshop Boss Portugal e Guia de Poses têm mensagens próprias para o WhatsApp. O Workshop Boss tradicional direciona para seu formulário de lista de espera. Beauty Edit e Luz em Foco direcionam para suas páginas de curso.
 
 Após editar, execute `npm run build`. Verifique com `npm run check`.
 
@@ -46,7 +46,7 @@ O script `scripts/optimize-images.mjs` documenta o processo original e requer Sh
 Preços, condições e links consultados em 15/09/2026:
 
 - [Beauty Edit](https://thainasampaio.com.br/beauty-edit/): R$ 297 à vista ou 12× de R$ 30,72; [checkout](https://payment.ticto.app/O93D409CF).
-- Boss 4P: página não listada, acessível somente por link direto.
+- Boss 4P: página não listada, acessível somente por link direto; os botões de inscrição direcionam para o formulário oficial da lista de espera.
 - [Luz em Foco](https://thainasampaio.com.br/luz-em-foco/): R$ 297 à vista ou 12× de R$ 29,82; [checkout](https://payment.ticto.app/O6EE53F3A).
 
 Os temas do Beauty Edit e Luz em Foco foram agrupados para facilitar a leitura, sem apresentar esses agrupamentos como módulos oficiais. Os cinco módulos oficiais e os bônus do Boss 4P estão preservados. Confirme mudanças futuras de valores com a responsável.
