@@ -68,18 +68,6 @@ em{font-style:normal;font-weight:500;color:#8f9292}
 .home-hero h1 em{color:#8c8e8e}
 .hero-description{max-width:410px;margin:35px 0 32px;color:#babcbc;font-size:16px;line-height:1.65}
 .hero-bottom{bottom:27px;font-size:10px;color:#878989}
-.workshop-boss{display:grid;grid-template-columns:minmax(145px,210px) minmax(0,1fr) auto;align-items:center;gap:clamp(28px,5vw,80px);padding:clamp(48px,6vw,92px) var(--pad);background:radial-gradient(circle at 88% 12%,rgba(196,163,106,.15),transparent 34%),#17140f;color:#f5f0e7;border-top:1px solid rgba(196,163,106,.35);border-bottom:1px solid rgba(196,163,106,.35)}
-.workshop-boss-date{display:flex;align-items:center;gap:14px;color:#c4a36a;border-right:1px solid rgba(196,163,106,.35);padding-right:28px}
-.workshop-boss-date>span{font-family:var(--display);font-size:clamp(70px,8vw,120px);font-weight:500;letter-spacing:-.08em;line-height:.85}
-.workshop-boss-date>div{font-size:12px;font-weight:600;letter-spacing:.13em;line-height:1.7}
-.workshop-boss-copy .eyebrow{margin-bottom:17px;color:#c4a36a;border-color:rgba(196,163,106,.6)}
-.workshop-boss h2{font-size:clamp(48px,5vw,76px);white-space:nowrap}
-.workshop-boss h2 em{color:#c4a36a}
-.workshop-boss-copy>p:last-child{max-width:530px;margin-top:18px;color:#d6d0c5;font-size:16px;line-height:1.6}
-.workshop-boss-cta{background:#c4a36a;border-color:#c4a36a;color:#080808;white-space:nowrap}
-.workshop-boss-cta:hover{background:#d4b780}
-@media(max-width:1100px){.workshop-boss{grid-template-columns:180px minmax(0,1fr)}.workshop-boss-cta{grid-column:2;justify-self:start}}
-@media(max-width:760px){.workshop-boss{grid-template-columns:1fr;gap:28px;padding-top:52px;padding-bottom:58px}.workshop-boss-date{width:max-content;max-width:100%;border-right:0;border-bottom:1px solid rgba(196,163,106,.35);padding:0 0 24px}.workshop-boss h2{white-space:normal}.workshop-boss-cta{grid-column:1}.workshop-boss-copy>p:last-child{margin-top:16px}}
 .statement-strip{background:var(--paper);color:var(--ink);border:0;padding-top:22px;padding-bottom:22px;font-size:11px;font-weight:600}
 .statement-strip i{color:#999;font-size:15px}
 
@@ -212,4 +200,58 @@ summary{padding-left:14px;padding-right:14px}
   .boss-pillars{grid-template-columns:1fr}.boss-pillars>div{min-height:175px}
   .audience-grid article{min-height:210px}.audience-grid h3{margin-top:35px}
   .price-card .price-amount{white-space:normal}
+}
+
+/* Brand and product collection */
+.brand img{width:225px;height:auto;max-height:58px;object-fit:contain}
+.footer-top .brand img{width:240px}
+.product-card{min-width:0}
+.product-card-action{margin-top:auto;padding-top:22px;border-top:1px solid var(--line)}
+.product-cta{width:100%;justify-content:space-between;text-align:left}
+.product-feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(45px,8vw,120px);align-items:start}
+.product-feature-image{position:sticky;top:105px;aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius)}
+.product-feature-image img{object-position:center 26%}
+.product-feature-copy{min-width:0}
+.product-feature-copy h2{margin-bottom:30px}
+.product-feature-copy>p:not(.eyebrow){max-width:680px;color:#5e6060;font-size:16px;line-height:1.7}
+.product-feature-copy .feature-lead{max-width:700px!important;margin-bottom:22px!important;color:#111!important;font-family:var(--display);font-size:clamp(24px,2.4vw,36px)!important;font-weight:500;letter-spacing:-.035em;line-height:1.15!important}
+.product-feature-copy>h3,.individual-note h3,.feature-closing h3{font-size:clamp(25px,2.2vw,34px);margin:42px 0 18px}
+.development-list{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.development-list li{position:relative;padding:14px 0 14px 25px;border-bottom:1px solid var(--line);font-size:14px}
+.development-list li:before{content:'↗';position:absolute;left:0;color:#6f7171}
+.individual-note,.feature-closing{margin-top:42px;padding:2px 28px 6px;border-left:2px solid #111}
+.individual-note h3,.feature-closing h3{margin-top:18px}
+.individual-note p,.feature-closing p{color:#5e6060;font-size:15px}
+.modality-label{margin-top:48px}
+.modality-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:42px}
+.modality-grid article{padding:24px;border:1px solid var(--line);border-radius:14px}
+.modality-grid article>span{display:grid;place-items:center;width:34px;height:34px;margin-bottom:40px;border-radius:50%;background:#dfe1e1;color:#555;font-size:12px}
+.modality-grid h3{font-size:clamp(25px,2vw,32px);text-transform:uppercase;margin-bottom:14px}
+.modality-grid p{margin:0;color:#5e6060;font-size:14px}
+.feature-closing{margin-bottom:36px}
+.workshop-feature{background:radial-gradient(circle at 12% 18%,rgba(196,163,106,.12),transparent 35%),#111;color:#f5f0e7}
+.workshop-feature .product-feature-copy{padding-top:35px}
+.workshop-feature .product-feature-copy>p:not(.eyebrow){color:#c7c4be}
+.workshop-feature .feature-lead{color:#f3f3f0!important}
+.workshop-feature .eyebrow{color:#c4a36a;border-color:rgba(196,163,106,.65)}
+.workshop-feature em{color:#c4a36a}
+.workshop-feature .button{background:#c4a36a;border-color:#c4a36a}
+.workshop-topics{display:flex;flex-wrap:wrap;gap:9px;margin:30px 0 38px}
+.workshop-topics span{padding:8px 13px;border:1px solid #45423d;border-radius:999px;color:#d7d3cb;font-size:12px}
+.workshop-feature .product-feature-image{order:2}
+.workshop-feature .product-feature-image img{object-position:center 28%}
+.waitlist-label{position:absolute;right:18px;bottom:18px;padding:10px 16px;border-radius:999px;background:rgba(8,8,8,.84);color:#fff;font-size:11px;letter-spacing:.12em}
+@media(max-width:1100px){
+  .product-feature{gap:45px}
+  .brand img{width:205px}
+}
+@media(max-width:760px){
+  .brand img{width:185px;max-height:48px}.footer-top .brand img{width:220px}
+  .product-feature{grid-template-columns:1fr}
+  .product-feature-image{position:relative;top:auto;aspect-ratio:4/4.8}
+  .mentorship-feature .product-feature-image{margin-bottom:5px}
+  .workshop-feature .product-feature-image{order:0}
+  .workshop-feature .product-feature-copy{padding-top:0}
+  .development-list,.modality-grid{grid-template-columns:1fr}
+  .individual-note,.feature-closing{padding-left:20px}
 }

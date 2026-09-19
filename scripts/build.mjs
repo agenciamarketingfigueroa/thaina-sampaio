@@ -17,6 +17,8 @@ for (const [slug, html] of pages) {
 }
 for (const dir of ['css', 'js', 'fonts']) await fs.cp(`assets/${dir}`, `dist/assets/${dir}`, {recursive:true});
 await fs.copyFile('assets/favicon.svg', 'dist/assets/favicon.svg');
+await fs.copyFile('assets/logo.svg', 'dist/assets/logo.svg');
 await fs.mkdir('dist/assets/img', {recursive:true});
+await fs.copyFile('assets/img/guia-de-poses-card.jpg', 'dist/assets/img/guia-de-poses-card.jpg');
 for (const name of await fs.readdir('assets/img/optimized')) if (/-\d+\.webp$/.test(name)) await fs.copyFile(path.join('assets/img/optimized',name),path.join('dist/assets/img',name));
 console.log('Site built in dist/');

@@ -28,9 +28,12 @@ for (const [route,{html}] of docs) {
   }
   for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) if (!/\balt="[^"]+"/.test(tag)) throw new Error(`${route}: image without alt`);
 }
+const jsFiles = [];
 for (const folder of ['scripts','src','assets/js']) {
-  for (const file of await fs.readdir(folder)) if (/\.m?js$/.test(file)) execFileSync(process.execPath,['--check',path.join(folder,file)]);
+  for (const file of await fs.readdir(folder)) if (/\.m?js$/.test(file)) jsFiles.push(path.join(folder,file));
 }
+if (process.versions.deno) execFileSync(process.execPath, ['check', ...jsFiles]);
+else for (const file of jsFiles) execFileSync(process.execPath, ['--check', file]);
 for (const font of ['cormorant-regular','cormorant-italic','manrope-regular','manrope-semibold','inter-tight-regular','inter-tight-medium','inter-tight-semibold','space-grotesk-medium']) {
   const bytes = await fs.readFile(`dist/assets/fonts/${font}.ttf`);
   if (bytes.readUInt32BE(0) !== 0x00010000) throw new Error(`Invalid font: ${font}`);
