@@ -8,7 +8,11 @@ try { sharp = require('sharp'); } catch { sharp = require('C:/Users/Felipe/.cach
 const root = path.resolve('assets/img');
 const output = path.join(root, 'optimized');
 await fs.mkdir(output, { recursive: true });
-const manifest = [];
+// Most original JPEGs were removed after their lossless masters were verified.
+// Preserve those records when processing newly added originals.
+const manifestPath = path.join(output, 'manifest.json');
+const existing = JSON.parse(await fs.readFile(manifestPath, 'utf8').catch(() => '[]'));
+const records = new Map(existing.map(item => [item.original, item]));
 for (const folder of ['beauty-edit', 'boss-4p', 'luz-em-foco']) {
   for (const filename of await fs.readdir(path.join(root, folder))) {
     if (!/\.jpe?g$/i.test(filename)) continue;
@@ -24,9 +28,10 @@ for (const folder of ['beauty-edit', 'boss-4p', 'luz-em-foco']) {
       const result = await sharp(master).resize({ width, withoutEnlargement: true }).webp({ quality: 94, effort: 5, smartSubsample: true }).toFile(path.join(output, `${slug}-${width}.webp`));
       sizes.push({ width: result.width, height: result.height, bytes: result.size });
     }
-    manifest.push({ original: `${folder}/${filename}`, slug, width: meta.width, height: meta.height, originalBytes: (await fs.stat(original)).size, masterBytes: (await fs.stat(master)).size, losslessVerified: true, sizes });
+    records.set(`${folder}/${filename}`, { original: `${folder}/${filename}`, slug, width: meta.width, height: meta.height, originalBytes: (await fs.stat(original)).size, masterBytes: (await fs.stat(master)).size, losslessVerified: true, sizes });
     console.log(`${filename}: lossless verified; responsive versions ready`);
   }
 }
-await fs.writeFile(path.join(output, 'manifest.json'), JSON.stringify(manifest, null, 2));
+const manifest = [...records.values()].sort((a, b) => a.original.localeCompare(b.original));
+await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2));
 console.log(`Complete: ${manifest.length} images. Originals have not yet been removed.`);

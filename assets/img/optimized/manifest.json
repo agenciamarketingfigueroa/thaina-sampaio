@@ -1,5 +1,31 @@
 [
   {
+    "original": "beauty-edit/capa-do-beauty-edit.jpeg",
+    "slug": "beauty-edit-capa-do-beauty-edit",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 7949917,
+    "masterBytes": 12407562,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 82574
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 458438
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1628568
+      }
+    ]
+  },
+  {
     "original": "beauty-edit/comparação-01-antes.jpeg",
     "slug": "beauty-edit-comparacao-01-antes",
     "width": 4000,

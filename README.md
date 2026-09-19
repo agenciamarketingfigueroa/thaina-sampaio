@@ -15,7 +15,7 @@ Abra http://127.0.0.1:4173. A pasta `dist/` contém o site pronto para hospedage
 
 ## Conteúdo e manutenção
 
-- `src/home.mjs`: seções da home e depoimentos ilustrativos, identificados como prévia.
+- `src/home.mjs`: seções da home e trechos dos depoimentos reais em `assets/img/feedbacks/`.
 - `src/courses.mjs`: textos, conteúdos, preços e checkout dos três cursos.
 - `src/shared.mjs`: cabeçalho, rodapé, história e estrutura HTML.
 - `assets/css/style.css`: identidade visual e estilos responsivos.
@@ -27,7 +27,7 @@ Após editar, execute `npm run build`. Verifique com `npm run check`.
 
 ## Fotografias
 
-As 32 fotos estão em `assets/img/optimized/`:
+As 33 fotos estão em `assets/img/optimized/`:
 
 - `*-master.webp`: resolução integral e compressão sem perdas, com perfil de cor preservado. Os pixels foram comparados por hash após orientação e conversão para sRGB, antes de remover os JPEGs originais.
 - `*-640.webp`, `*-1200.webp`, `*-2000.webp`: versões para exibição, com qualidade WebP 94. São selecionadas pelo navegador com `srcset`; têm redução de dimensões e compressão com perdas, ao contrário dos masters.
@@ -42,7 +42,7 @@ O script `scripts/optimize-images.mjs` documenta o processo original e requer Sh
 Preços, condições e links consultados em 15/09/2026:
 
 - [Beauty Edit](https://thainasampaio.com.br/beauty-edit/): R$ 297 à vista ou 12× de R$ 30,72; [checkout](https://payment.ticto.app/O93D409CF).
-- [Boss 4P](https://thainasampaio.com.br/boss-4p/): R$ 997 à vista ou até 12×, acesso de 1 ano, conteúdo completo liberado após 7 dias; [checkout](https://checkout.ticto.app/O640B7735).
+- Boss 4P: página não listada, acessível somente por link direto. A home apresenta um botão de lista de espera no WhatsApp.
 - [Luz em Foco](https://thainasampaio.com.br/luz-em-foco/): R$ 297 à vista ou 12× de R$ 29,82; [checkout](https://payment.ticto.app/O6EE53F3A).
 
 Os temas do Beauty Edit e Luz em Foco foram agrupados para facilitar a leitura, sem apresentar esses agrupamentos como módulos oficiais. Os cinco módulos oficiais e os bônus do Boss 4P estão preservados. Confirme mudanças futuras de valores com a responsável.
