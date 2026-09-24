@@ -42,7 +42,7 @@ O script `scripts/optimize-images.mjs` documenta o processo original e requer Sh
 Preços, condições e links consultados em 15/09/2026:
 
 - [Beauty Edit](https://thainasampaio.com.br/beauty-edit/): R$ 297 à vista ou 12× de R$ 30,72; [checkout](https://payment.ticto.app/O93D409CF).
-- Boss 4P: página não listada, acessível somente por link direto. A home apresenta um botão de lista de espera no WhatsApp.
+- Boss 4P: curso apresentado na seção de cursos da home, com acesso à página do método.
 - [Luz em Foco](https://thainasampaio.com.br/luz-em-foco/): R$ 297 à vista ou 12× de R$ 29,82; [checkout](https://payment.ticto.app/O6EE53F3A).
 
 Os temas do Beauty Edit e Luz em Foco foram agrupados para facilitar a leitura, sem apresentar esses agrupamentos como módulos oficiais. Os cinco módulos oficiais e os bônus do Boss 4P estão preservados. Confirme mudanças futuras de valores com a responsável.
