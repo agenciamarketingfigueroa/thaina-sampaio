@@ -20,12 +20,12 @@ const data = {
     faq:[['Posso acompanhar pelo celular?','Sim. O Beauty Edit aborda edição no celular, no iPad e no computador.'],['Vou aprender a usar inteligência artificial?','Sim. O conteúdo inclui IA aplicada à edição e ao trabalho em massa.'],['O curso aborda apenas tratamento de pele?','Além da pele, você aprende limpeza, expansão e troca de fundos, remoção de elementos e realce de tonalidade.'],['Onde encontro as condições de compra?','O botão de inscrição leva ao checkout oficial do Beauty Edit, com as formas de pagamento e as condições aplicáveis à compra.']]
   },
   'boss-4p': {
-    name:'Boss 4P', category:'O MÉTODO POR TRÁS DA IMAGEM', hero:'boss-4p-hero-thaina-boss-4p',
+    name:'Método Boss 4P', category:'O MÉTODO POR TRÁS DA IMAGEM', hero:'boss-4p-hero-thaina-boss-4p',
     tagline:'Fotografias que posicionam,<br>comunicam e vendem.',
     description:'Da direção à entrega final: conheça o método que conecta posicionamento, produção, performance fotográfica e pós-produção para criar imagens com presença.',
     cta:'Entrar na lista de espera', facts:['5 módulos + bônus','100% online · 1 ano de acesso','Certificado de conclusão'],
     intro:'Uma imagem forte<br>é <em>construída.</em>',
-    introText:'O Boss 4P reúne a prática de estúdio de Thainá em um método completo: direção, produção visual, técnica e finalização. Um caminho para fotografar com mais intenção e oferecer uma experiência mais profissional.',
+    introText:'O Método Boss 4P reúne a prática de estúdio de Thainá em um método completo: direção, produção visual, técnica e finalização. Um caminho para fotografar com mais intenção e oferecer uma experiência mais profissional.',
     modules:[
       ['Posicionamento e direção estratégica', [
         ['Método Boss de Posicionamento','Análise de biotipo; posições e ângulos que valorizam cada cliente; direção de mãos, braços, pernas e tronco; erros que prejudicam a imagem.'],
@@ -48,7 +48,7 @@ const data = {
       ['Preciso ter muita experiência com fotografia?','Não. O método atende iniciantes e profissionais que desejam evoluir na direção, iluminação, posicionamento e entrega.'],
       ['O conteúdo vai além das poses?','Sim. Você estuda posicionamento, produção, técnica fotográfica e pós-produção, além de consultoria de imagem, precificação e vendas.'],
       ['O método serve apenas para ensaios femininos?','Não. Ele pode ser aplicado a marca pessoal, beleza, gestantes, noivas, profissionais liberais e outros clientes que buscam presença na imagem.'],
-      ['Por quanto tempo terei acesso?','O acesso ao Boss 4P é de 1 ano. As aulas são online e podem ser revistas durante esse período.'],
+      ['Por quanto tempo terei acesso?','O acesso ao Método Boss 4P é de 1 ano. As aulas são online e podem ser revistas durante esse período.'],
       ['Quando as inscrições serão abertas?','Quem estiver na lista de espera receberá as informações quando uma nova turma ou período de inscrições estiver disponível.'],
       ['Como entro na lista de espera?','Preencha o formulário oficial pelo botão desta página. Assim, a equipe poderá avisar você sobre a próxima abertura.'],
       ['O curso inclui suporte e certificado?','Sim. Há um canal de suporte para dúvidas sobre o conteúdo e certificado de conclusão após finalizar as aulas.'],
@@ -83,7 +83,7 @@ function gallery() {
 }
 function coursePage(slug, c) {
   return layout(`${c.name} | Curso com Thainá Sampaio`, c.description, `
-    <section class="course-hero"><div class="course-hero-copy"><div class="breadcrumbs"><a href="/">Início</a><span>/</span><a href="/#cursos">Cursos</a><span>/</span><span>${c.name}</span></div><p class="eyebrow">${c.category}</p><h1>${c.name === 'Luz em Foco' ? 'Luz em<br><em>Foco.</em>' : c.name === 'Beauty Edit' ? 'Beauty <em>Edit.</em>' : 'Boss <em>4P.</em>'}</h1><p class="course-tagline">${c.tagline}</p><p class="course-description">${c.description}</p><a href="${c.waitlist?c.checkout:'#investimento'}" class="button" ${c.waitlist?'target="_blank" rel="noopener noreferrer"':''}>${c.cta} ${arrow}</a><div class="course-hero-facts"><span>COM THAINÁ SAMPAIO</span><span>APRENDA NA PRÁTICA</span></div></div><div class="course-hero-image">${photo(c.hero,`Thainá Sampaio apresenta o ${c.name}`,{eager:true})}</div></section>
+    <section class="course-hero"><div class="course-hero-copy"><div class="breadcrumbs"><a href="/">Início</a><span>/</span><a href="/#cursos">Cursos</a><span>/</span><span>${c.name}</span></div><p class="eyebrow">${c.category}</p><h1>${c.name === 'Luz em Foco' ? 'Luz em<br><em>Foco.</em>' : c.name === 'Beauty Edit' ? 'Beauty <em>Edit.</em>' : 'Método Boss <em>4P.</em>'}</h1><p class="course-tagline">${c.tagline}</p><p class="course-description">${c.description}</p><a href="${c.waitlist?c.checkout:'#investimento'}" class="button" ${c.waitlist?'target="_blank" rel="noopener noreferrer"':''}>${c.cta} ${arrow}</a><div class="course-hero-facts"><span>COM THAINÁ SAMPAIO</span><span>APRENDA NA PRÁTICA</span></div></div><div class="course-hero-image">${photo(c.hero,`Thainá Sampaio apresenta o ${c.name}`,{eager:true})}</div></section>
     <div class="course-facts">${c.facts.map(f=>`<span>${f}</span>`).join('')}</div>
     <section class="section light"><div class="split-heading"><div><p class="eyebrow">${slug==='boss-4p'?'OS QUATRO PILARES':'UM NOVO OLHAR PARA O SEU TRABALHO'}</p><h2>${c.intro}</h2></div><p>${c.introText}</p></div>${slug==='boss-4p'?`<div class="boss-pillars">${[['01','Posicionamento','Direção estratégica para valorizar cada cliente.'],['02','Produção','Styling e construção visual com intenção.'],['03','Performance','Técnica, luz e direção fotográfica.'],['04','Pós-produção','Finalização refinada e entrega profissional.']].map(([n,h,p])=>`<div><span>${n}</span><h3>${h}</h3><p>${p}</p></div>`).join('')}</div>`:''}</section>
     ${slug==='beauty-edit'?comparison():slug==='luz-em-foco'?gallery():''}
