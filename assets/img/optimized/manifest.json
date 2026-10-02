@@ -832,6 +832,32 @@
     ]
   },
   {
+    "original": "luz-em-foco/thaina-luz-em-foco-capa.JPG",
+    "slug": "luz-em-foco-thaina-luz-em-foco-capa",
+    "width": 4000,
+    "height": 6000,
+    "originalBytes": 11367233,
+    "masterBytes": 15224856,
+    "losslessVerified": true,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 960,
+        "bytes": 107100
+      },
+      {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 545396
+      },
+      {
+        "width": 2000,
+        "height": 3000,
+        "bytes": 1969606
+      }
+    ]
+  },
+  {
     "original": "luz-em-foco/thaina-perfil-luz-em-foco.jpeg",
     "slug": "luz-em-foco-thaina-perfil-luz-em-foco",
     "width": 4000,
