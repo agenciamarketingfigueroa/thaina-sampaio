@@ -46,7 +46,7 @@ O script `scripts/optimize-images.mjs` documenta o processo original e requer Sh
 Preços, condições e links consultados em 15/09/2026:
 
 - [Beauty Edit](https://thainasampaio.com.br/beauty-edit/): R$ 297 à vista ou 12× de R$ 30,72; [checkout](https://payment.ticto.app/O93D409CF).
-- Método Boss 4P: página não listada, acessível somente por link direto; os botões de inscrição direcionam para o formulário oficial da lista de espera.
+- Método Boss 4P (atualizado em 06/10/2026): R$ 997 à vista ou 12x de R$ 103,11; checkout https://checkout.ticto.app/O640B7735. Inscrições até 11/10/2026 às 23:59 no horário de Brasília. O contador usa uma data fixa em `src/courses.mjs`; `assets/js/enrollment.js` troca os botões e a oferta para a lista de espera após esse prazo. Na home, o botão permanece desabilitado como “Disponível em Breve”. A página continua acessível por link direto e com noindex.
 - [Luz em Foco](https://thainasampaio.com.br/luz-em-foco/): R$ 297 à vista ou 12× de R$ 29,82; [checkout](https://payment.ticto.app/O6EE53F3A).
 
 Os temas do Beauty Edit e Luz em Foco foram agrupados para facilitar a leitura, sem apresentar esses agrupamentos como módulos oficiais. Os cinco módulos oficiais e os bônus do Método Boss 4P estão preservados. Confirme mudanças futuras de valores com a responsável.

@@ -23,7 +23,7 @@ const data = {
     name:'Método Boss 4P', category:'O MÉTODO POR TRÁS DA IMAGEM', hero:'boss-4p-hero-thaina-boss-4p',
     tagline:'Fotografias que posicionam,<br>comunicam e vendem.',
     description:'Da direção à entrega final: conheça o método que conecta posicionamento, produção, performance fotográfica e pós-produção para criar imagens com presença.',
-    cta:'Entrar na lista de espera', facts:['5 módulos + bônus','100% online · 1 ano de acesso','Certificado de conclusão'],
+    cta:'Quero garantir minha vaga', facts:['5 módulos + bônus','100% online · 1 ano de acesso','Certificado de conclusão'],
     intro:'Uma imagem forte<br>é <em>construída.</em>',
     introText:'O Método Boss 4P reúne a prática de estúdio de Thainá em um método completo: direção, produção visual, técnica e finalização. Um caminho para fotografar com mais intenção e oferecer uma experiência mais profissional.',
     modules:[
@@ -42,15 +42,17 @@ const data = {
       ['Bônus para levar à prática', ['Guia de poses femininas.','Guia de consultoria de imagem para clientes.','Briefing.','Preset exclusivo.','Aula extra: workshop na íntegra.']]
     ],
     audience:[['Fotógrafos que querem se destacar','Uma metodologia para construir imagens com intenção e fortalecer sua atuação.'],['Profissionais da beleza e da imagem','Direção, produção e técnica para elevar a percepção de valor do seu trabalho.'],['Quem procura um método claro','Um caminho aplicável tanto para iniciantes quanto para quem já fotografa.']],
-    waitlist:true, checkout:'https://docs.google.com/forms/d/e/1FAIpQLScwE-asxIj49-kLfYJYP6Yvd6-_0yRPaR29LHCYVGx78lahrw/viewform?usp=publish-editor',
+    price:'997', installment:'103,11', checkout:'https://checkout.ticto.app/O640B7735',
+    enrollmentDeadline:'2026-10-11T23:59:00-03:00',
+    waitlistUrl:'https://docs.google.com/forms/d/e/1FAIpQLScwE-asxIj49-kLfYJYP6Yvd6-_0yRPaR29LHCYVGx78lahrw/viewform?usp=publish-editor',
     included:['5 módulos: da direção à pós-produção','Consultoria de imagem, precificação e vendas','13 aulas de iluminação de estúdio','Guias, briefing e preset exclusivo','Workshop completo como aula extra','1 ano de acesso, suporte e certificado'],
     faq:[
       ['Preciso ter muita experiência com fotografia?','Não. O método atende iniciantes e profissionais que desejam evoluir na direção, iluminação, posicionamento e entrega.'],
       ['O conteúdo vai além das poses?','Sim. Você estuda posicionamento, produção, técnica fotográfica e pós-produção, além de consultoria de imagem, precificação e vendas.'],
       ['O método serve apenas para ensaios femininos?','Não. Ele pode ser aplicado a marca pessoal, beleza, gestantes, noivas, profissionais liberais e outros clientes que buscam presença na imagem.'],
       ['Por quanto tempo terei acesso?','O acesso ao Método Boss 4P é de 1 ano. As aulas são online e podem ser revistas durante esse período.'],
-      ['Quando as inscrições serão abertas?','Quem estiver na lista de espera receberá as informações quando uma nova turma ou período de inscrições estiver disponível.'],
-      ['Como entro na lista de espera?','Preencha o formulário oficial pelo botão desta página. Assim, a equipe poderá avisar você sobre a próxima abertura.'],
+      ['Quando as inscrições encerram?','As inscrições desta turma encerram no domingo, 11/10/2026, às 23:59, no horário de Brasília. Após esse prazo, os botões desta página direcionam para a lista de espera da próxima abertura.'],
+      ['Qual é o investimento?','O investimento nesta turma é de R$ 997 à vista ou 12x de R$ 103,11. Durante as inscrições, o botão de compra leva ao checkout oficial do Método Boss 4P.'],
       ['O curso inclui suporte e certificado?','Sim. Há um canal de suporte para dúvidas sobre o conteúdo e certificado de conclusão após finalizar as aulas.'],
       ['Preencher o formulário garante uma vaga?','Não. O cadastro demonstra seu interesse e permite que você receba as informações da próxima abertura.']
     ]
@@ -81,18 +83,41 @@ function comparison() {
 function gallery() {
   return `<section class="section light light-gallery"><div class="section-heading"><div><p class="eyebrow">A LUZ COMO ASSINATURA</p><h2>Uma técnica.<br><em>Muitos jeitos de sentir.</em></h2></div><p>Luz suave, recortes, sombras e contrastes. Um repertório para construir a imagem que você imaginou.</p></div><div class="course-gallery">${['01','04','05','06','09','10','16','20'].map(i=>photo(`luz-em-foco-grid-luz-em-foco-${i}`, `Exemplo de iluminação de estúdio por Thainá Sampaio — fotografia ${i}`,{sizes:'(max-width: 760px) 45vw, 24vw'})).join('')}</div></section>`;
 }
+
+function enrollmentCountdown(c) {
+  return `<div class="enrollment-banner" data-enrollment-deadline="${c.enrollmentDeadline}">
+    <p class="enrollment-status" role="status"><span data-enrollment-open>Inscrições abertas até domingo, 11/10, às 23:59</span><span data-enrollment-closed hidden>Inscrições encerradas. Entre na lista de espera.</span></p>
+    <p class="enrollment-timezone" data-enrollment-open>Horário de Brasília</p>
+    <div class="enrollment-countdown" role="timer" aria-live="off" aria-label="Tempo restante para o encerramento das inscrições" data-enrollment-open>
+      ${[['days','Dias'],['hours','Horas'],['minutes','Minutos'],['seconds','Segundos']].map(([unit,label])=>`<div><strong data-countdown="${unit}">--</strong><span>${label}</span></div>`).join('')}
+    </div>
+  </div>`;
+}
+function enrollmentButton(c) {
+  return `<a href="${c.checkout}" class="button" target="_blank" rel="noopener noreferrer" data-enrollment-cta data-waitlist-url="${c.waitlistUrl}"><b data-enrollment-label>${c.cta}</b> ${arrow}</a>`;
+}
+function enrollmentPrice(c) {
+  return `<div class="price-card">
+    <div data-enrollment-open><p class="eyebrow">MÉTODO BOSS 4P / INSCRIÇÕES ABERTAS</p><div class="price-amount"><small>12x de</small> R$ ${c.installment}</div><p class="price-cash">ou <strong>R$ ${c.price}</strong> à vista</p><p class="enrollment-price-deadline">Inscrições até domingo, 11/10, às 23:59 (Brasília).</p></div>
+    <div class="waitlist-price-card" data-enrollment-closed hidden><p class="eyebrow">MÉTODO BOSS 4P / LISTA DE ESPERA</p><h3>Seja avisado na próxima abertura.</h3><p>Preencha o formulário oficial para receber as informações quando novas vagas estiverem disponíveis.</p></div>
+    ${enrollmentButton(c)}
+    <p class="price-note" data-enrollment-open>Compra no checkout oficial. Confira as condições de parcelamento antes de concluir.</p>
+    <p class="price-note" data-enrollment-closed hidden>O cadastro registra seu interesse e não garante uma vaga.</p>
+  </div>`;
+}
+
 function coursePage(slug, c) {
   return layout(`${c.name} | Curso com Thainá Sampaio`, c.description, `
-    <section class="course-hero"><div class="course-hero-copy"><div class="breadcrumbs"><a href="/">Início</a><span>/</span><a href="/#cursos">Cursos</a><span>/</span><span>${c.name}</span></div><p class="eyebrow">${c.category}</p><h1>${c.name === 'Luz em Foco' ? 'Luz em<br><em>Foco.</em>' : c.name === 'Beauty Edit' ? 'Beauty <em>Edit.</em>' : 'Método Boss <em>4P.</em>'}</h1><p class="course-tagline">${c.tagline}</p><p class="course-description">${c.description}</p><a href="${c.waitlist?c.checkout:'#investimento'}" class="button" ${c.waitlist?'target="_blank" rel="noopener noreferrer"':''}>${c.cta} ${arrow}</a><div class="course-hero-facts"><span>COM THAINÁ SAMPAIO</span><span>APRENDA NA PRÁTICA</span></div></div><div class="course-hero-image">${photo(c.hero,`Thainá Sampaio apresenta o ${c.name}`,{eager:true})}</div></section>
+    <section class="course-hero"><div class="course-hero-copy"><div class="breadcrumbs"><a href="/">Início</a><span>/</span><a href="/#cursos">Cursos</a><span>/</span><span>${c.name}</span></div><p class="eyebrow">${c.category}</p><h1>${c.name === 'Luz em Foco' ? 'Luz em<br><em>Foco.</em>' : c.name === 'Beauty Edit' ? 'Beauty <em>Edit.</em>' : 'Método Boss <em>4P.</em>'}</h1><p class="course-tagline">${c.tagline}</p><p class="course-description">${c.description}</p>${c.enrollmentDeadline ? enrollmentCountdown(c) + enrollmentButton(c) : `<a href="${c.waitlist?c.checkout:'#investimento'}" class="button" ${c.waitlist?'target="_blank" rel="noopener noreferrer"':''}>${c.cta} ${arrow}</a>`}<div class="course-hero-facts"><span>COM THAINÁ SAMPAIO</span><span>APRENDA NA PRÁTICA</span></div></div><div class="course-hero-image">${photo(c.hero,`Thainá Sampaio apresenta o ${c.name}`,{eager:true})}</div></section>
     <div class="course-facts">${c.facts.map(f=>`<span>${f}</span>`).join('')}</div>
     <section class="section light"><div class="split-heading"><div><p class="eyebrow">${slug==='boss-4p'?'OS QUATRO PILARES':'UM NOVO OLHAR PARA O SEU TRABALHO'}</p><h2>${c.intro}</h2></div><p>${c.introText}</p></div>${slug==='boss-4p'?`<div class="boss-pillars">${[['01','Posicionamento','Direção estratégica para valorizar cada cliente.'],['02','Produção','Styling e construção visual com intenção.'],['03','Performance','Técnica, luz e direção fotográfica.'],['04','Pós-produção','Finalização refinada e entrega profissional.']].map(([n,h,p])=>`<div><span>${n}</span><h3>${h}</h3><p>${p}</p></div>`).join('')}</div>`:''}</section>
     ${slug==='beauty-edit'?comparison():slug==='luz-em-foco'?gallery():''}
     <section class="section audience-section"><p class="eyebrow">ESSE É O SEU PRÓXIMO PASSO?</p><h2>Feito para quem quer <em>evoluir.</em></h2><div class="audience-grid">${c.audience.map(([h,p],i)=>`<article><span>0${i+1}</span><h3>${h}</h3><p>${p}</p></article>`).join('')}</div></section>
     <section class="section light curriculum" id="conteudo-curso"><div class="curriculum-heading"><p class="eyebrow">POR DENTRO DO ${c.name.toUpperCase()}</p><h2>Da técnica<br><em>à prática.</em></h2><p>${slug==='boss-4p'?'Cinco módulos e materiais bônus para construir uma experiência completa.':'Explore os temas que você vai aprender e aplicar nas suas fotografias.'}</p></div><div class="modules">${c.modules.map(([title,items],i)=>`<details ${i===0?'open':''}><summary><span>${String(i+1).padStart(2,'0')}</span>${title}</summary><div class="module-body">${items.some(Array.isArray)?items.map(([h,p])=>`<h4>${h}</h4><p>${p}</p>`).join(''):`<ul>${items.map(item=>`<li>${item}</li>`).join('')}</ul>`}</div></details>`).join('')}</div></section>
-    <section class="section price-section" id="investimento"><div class="price-copy"><p class="eyebrow">${c.waitlist?'PRÓXIMA ABERTURA':'INVISTA NO SEU OLHAR'}</p><h2>${c.waitlist?'Entre para a<br><em>lista de espera.</em>':'Seu próximo nível<br><em>começa aqui.</em>'}</h2><ul class="checklist">${c.included.map(item=>`<li>${item}</li>`).join('')}</ul></div>${c.waitlist?`<div class="price-card waitlist-price-card"><p class="eyebrow">${c.name.toUpperCase()} / LISTA DE ESPERA</p><h3>Seja avisado na próxima abertura.</h3><p>Preencha o formulário oficial para receber as informações quando novas vagas estiverem disponíveis.</p><a class="button" href="${c.checkout}" target="_blank" rel="noopener noreferrer">Entrar na lista de espera ${arrow}</a><p class="price-note">O cadastro registra seu interesse e não garante uma vaga.</p></div>`:`<div class="price-card"><p class="eyebrow">${c.name.toUpperCase()} / COM THAINÁ SAMPAIO</p><p class="original-price">De <s>R$ ${c.old},00</s> por</p>${c.installment?`<div class="price-amount"><small>12×</small> R$ ${c.installment}</div><p class="price-cash">ou <strong>R$ ${c.price},00</strong> à vista</p>`:`<div class="price-amount"><small>R$</small> ${c.price}</div><p class="price-cash">à vista ou em até <strong>12× no cartão</strong></p>`}<a class="button" href="${c.checkout}" target="_blank" rel="noopener noreferrer">Quero garantir meu acesso ${arrow}</a><p class="price-note">Compra no checkout oficial. Confira as condições de parcelamento antes de concluir.</p></div>`}</section>
+    <section class="section price-section" id="investimento"><div class="price-copy"><p class="eyebrow">${c.enrollmentDeadline?'<span data-enrollment-open>INSCRIÇÕES ABERTAS</span><span data-enrollment-closed hidden>PRÓXIMA ABERTURA</span>':c.waitlist?'PRÓXIMA ABERTURA':'INVISTA NO SEU OLHAR'}</p><h2>${c.enrollmentDeadline?'<span data-enrollment-open>Seu próximo nível<br><em>começa aqui.</em></span><span data-enrollment-closed hidden>Entre para a<br><em>lista de espera.</em></span>':c.waitlist?'Entre para a<br><em>lista de espera.</em>':'Seu próximo nível<br><em>começa aqui.</em>'}</h2><ul class="checklist">${c.included.map(item=>`<li>${item}</li>`).join('')}</ul></div>${c.enrollmentDeadline?enrollmentPrice(c):c.waitlist?`<div class="price-card waitlist-price-card"><p class="eyebrow">${c.name.toUpperCase()} / LISTA DE ESPERA</p><h3>Seja avisado na próxima abertura.</h3><p>Preencha o formulário oficial para receber as informações quando novas vagas estiverem disponíveis.</p><a class="button" href="${c.checkout}" target="_blank" rel="noopener noreferrer">Entrar na lista de espera ${arrow}</a><p class="price-note">O cadastro registra seu interesse e não garante uma vaga.</p></div>`:`<div class="price-card"><p class="eyebrow">${c.name.toUpperCase()} / COM THAINÁ SAMPAIO</p><p class="original-price">De <s>R$ ${c.old},00</s> por</p>${c.installment?`<div class="price-amount"><small>12×</small> R$ ${c.installment}</div><p class="price-cash">ou <strong>R$ ${c.price},00</strong> à vista</p>`:`<div class="price-amount"><small>R$</small> ${c.price}</div><p class="price-cash">à vista ou em até <strong>12× no cartão</strong></p>`}<a class="button" href="${c.checkout}" target="_blank" rel="noopener noreferrer">Quero garantir meu acesso ${arrow}</a><p class="price-note">Compra no checkout oficial. Confira as condições de parcelamento antes de concluir.</p></div>`}</section>
     <section class="section about-section mentor-section light"><div class="about-image">${photo('beauty-edit-thaina-perfil-beauty-edit','Thainá Sampaio, sua professora')}<span class="about-image-label">Da minha prática para a sua.</span></div><div class="about-copy"><p class="eyebrow">COM QUEM VOCÊ VAI APRENDER</p><h2>Eu sou<br><em>Thainá Sampaio.</em></h2>${biography}<span class="signature">Thainá Sampaio</span></div></section>
     <section class="section light faq-section"><div><p class="eyebrow">ANTES DE COMEÇAR</p><h2>Suas dúvidas,<br><em>respondidas.</em></h2></div><div class="modules">${c.faq.map(([q,a])=>`<details><summary>${q}</summary><div class="module-body"><p>${a}</p></div></details>`).join('')}</div></section>
     <div class="course-return"><a class="text-link" href="/#cursos">Conheça os outros cursos ${arrow}</a></div>
-  `, `course-page ${slug}`, { noindex: slug === 'boss-4p' });
+  `, `course-page ${slug}`, { noindex: slug === 'boss-4p', enrollment: Boolean(c.enrollmentDeadline) });
 }
 export const courses = () => Object.fromEntries(Object.entries(data).map(([slug,course])=>[slug,coursePage(slug,course)]));

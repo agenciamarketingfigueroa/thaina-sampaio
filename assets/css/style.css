@@ -270,3 +270,17 @@ summary{padding-left:14px;padding-right:14px}
   .development-list,.modality-grid{grid-template-columns:1fr}
   .individual-note,.feature-closing{padding-left:20px}
 }
+
+/* Fixed enrollment window for Metodo Boss 4P. */
+[data-enrollment-open][hidden],[data-enrollment-closed][hidden]{display:none!important}
+.enrollment-banner{max-width:440px;margin:24px 0;padding:20px;border:1px solid rgba(196,163,106,.45);border-radius:14px;background:rgba(196,163,106,.06)}
+.enrollment-status{margin:0;color:#e4c58f;font-size:14px;line-height:1.5;font-weight:600}
+.enrollment-timezone{margin:4px 0 16px;color:#b7b8b8;font-size:12px}
+.enrollment-countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.enrollment-countdown>div{padding:10px 4px;border-radius:8px;background:#17140f;text-align:center}
+.enrollment-countdown strong{display:block;font-size:clamp(24px,3vw,36px);line-height:1.2;font-variant-numeric:tabular-nums;color:#fff}
+.enrollment-countdown span{display:block;margin-top:5px;font-size:10px;color:#c7c1b6}
+[data-enrollment-label]{font-weight:inherit}
+.enrollment-price-deadline{font-size:13px;color:#e4c58f;line-height:1.6;margin:0 0 24px}
+.boss-4p .price-amount{font-size:clamp(32px,4vw,58px)}
+.product-cta:disabled{cursor:default;background:#292929;border-color:#454545;color:#c7c7c7;transform:none;box-shadow:none}
