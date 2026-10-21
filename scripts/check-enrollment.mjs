@@ -72,6 +72,6 @@ assert.equal((html.match(/href="https:\/\/checkout.ticto.app\/O640B7735"/g) || [
 assert.ok(html.includes('R$ 103,11') && html.includes('R$ 997'));
 assert.ok(!html.includes('undefined'));
 const home = fs.readFileSync('dist/index.html', 'utf8');
-assert.ok(home.includes('disabled>Disponível em Breve</button>'));
-assert.ok(!home.includes('href="/boss-4p/"'));
+assert.ok(home.includes('href="https://checkout.ticto.app/O104B621E"'));
+assert.ok(home.includes('href="https://thainasampaio.com.br/boss-4p/"'));
 console.log('OK: enrollment countdown, deadline, timezone, both CTAs, suspended tabs, and generated pages verified.');
