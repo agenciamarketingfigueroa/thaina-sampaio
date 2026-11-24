@@ -6,8 +6,8 @@ export const home = () => layout('Thainá Sampaio | Fotografia, beleza e presen�
   <div class="hero-bottom"><span>MAIS QUE UMA FOTO. UMA NOVA FORMA DE SE VER.</span><a href="#pacote-boss" aria-label="Conhecer a experiência">EXPLORE <span>↓</span></a></div>
 </section>
 <section class="mentorship-highlight" aria-labelledby="mentorship-highlight-title">
-  <div class="mentorship-highlight-copy"><p class="eyebrow">ACOMPANHAMENTO INDIVIDUAL · ONLINE E PRESENCIAL</p><h2 id="mentorship-highlight-title">Mentoria <em>Boss.</em></h2><p>Eleve sua fotografia, seu posicionamento e o valor do seu trabalho.</p><span>Um acompanhamento personalizado e estratégico para desenvolver sua fotografia e seu negócio, de acordo com o seu momento e seus objetivos.</span></div>
-  <a class="button mentorship-highlight-cta" href="#mentoria-boss">Conhecer a mentoria ${arrow}</a>
+  <div class="mentorship-highlight-image">${photo('luz-em-foco-thaina-perfil-luz-em-foco', 'Thainá Sampaio em retrato de corpo inteiro no estúdio, capa da Mentoria Boss', {sizes:'(max-width: 360px) 88vw, (max-width: 760px) 320px, (max-width: 1100px) 34vw, 360px'})}</div>
+  <div class="mentorship-highlight-copy"><p class="eyebrow">ACOMPANHAMENTO INDIVIDUAL · ONLINE E PRESENCIAL</p><h2 id="mentorship-highlight-title">Mentoria <em>Boss.</em></h2><p>Eleve sua fotografia, seu posicionamento e o valor do seu trabalho.</p><span>Um acompanhamento personalizado e estratégico para desenvolver sua fotografia e seu negócio, de acordo com o seu momento e seus objetivos.</span><a class="button mentorship-highlight-cta" href="#mentoria-boss">Conhecer a mentoria ${arrow}</a></div>
 </section>
 <div class="statement-strip" aria-hidden="true"><span>BELEZA COM INTENÇÃO</span><i>✳</i><span>IMAGENS QUE POSICIONAM</span><i>✳</i><span>PRESENÇA QUE MARCA</span><i>✳</i></div>
 <section class="section light boss-section" id="pacote-boss">
