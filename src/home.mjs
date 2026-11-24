@@ -5,10 +5,9 @@ export const home = () => layout('Thainá Sampaio | Fotografia, beleza e presen�
   <div class="hero-copy"><p class="eyebrow"><span class="small-line"></span> POR THAINÁ SAMPAIO</p><h1 id="hero-title">Sua essência.<br>Uma imagem<br><em>inesquecível.</em></h1><p class="hero-description">Maquiagem e fotografia se encontram para revelar a sua melhor versão. Com intenção, personalidade e presença.</p><div class="hero-actions"><a class="button" href="#pacote-boss">Conheça o Pacote Boss ${arrow}</a><a class="text-link" href="#cursos">Explore os produtos <span aria-hidden="true">↗</span></a></div></div>
   <div class="hero-bottom"><span>MAIS QUE UMA FOTO. UMA NOVA FORMA DE SE VER.</span><a href="#pacote-boss" aria-label="Conhecer a experiência">EXPLORE <span>↓</span></a></div>
 </section>
-<section class="portugal-event" aria-labelledby="portugal-event-title">
-  <div class="portugal-event-date" aria-label="25 de fevereiro, em Portugal"><span>25</span><div>FEVEREIRO<br>PORTUGAL</div></div>
-  <div class="portugal-event-copy"><p class="eyebrow">EVENTO ESPECIAL · PORTUGAL</p><h2 id="portugal-event-title">Workshop Boss <em>Portugal.</em></h2><p>Uma edição especial e exclusiva do Workshop Boss, realizada em Portugal para viver o método em uma experiência presencial.</p><span>Evento independente do Workshop Boss tradicional, que acontece com mais frequência em nosso espaço.</span></div>
-  <a class="button portugal-event-cta" href="#contato" data-whatsapp="Olá, Thainá! Tenho interesse no Workshop Boss especial em Portugal. Pode me passar as informações?">Quero participar ${arrow}</a>
+<section class="mentorship-highlight" aria-labelledby="mentorship-highlight-title">
+  <div class="mentorship-highlight-copy"><p class="eyebrow">ACOMPANHAMENTO INDIVIDUAL · ONLINE E PRESENCIAL</p><h2 id="mentorship-highlight-title">Mentoria <em>Boss.</em></h2><p>Eleve sua fotografia, seu posicionamento e o valor do seu trabalho.</p><span>Um acompanhamento personalizado e estratégico para desenvolver sua fotografia e seu negócio, de acordo com o seu momento e seus objetivos.</span></div>
+  <a class="button mentorship-highlight-cta" href="#mentoria-boss">Conhecer a mentoria ${arrow}</a>
 </section>
 <div class="statement-strip" aria-hidden="true"><span>BELEZA COM INTENÇÃO</span><i>✳</i><span>IMAGENS QUE POSICIONAM</span><i>✳</i><span>PRESENÇA QUE MARCA</span><i>✳</i></div>
 <section class="section light boss-section" id="pacote-boss">
